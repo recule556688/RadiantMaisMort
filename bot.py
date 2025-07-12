@@ -10,7 +10,7 @@ from datetime import datetime
 load_dotenv(override=True)
 DISCORD_TOKEN = os.getenv("DISCORD_TOKEN", "").strip()
 RIOT_API_KEY = os.getenv("RIOT_API_KEY", "").strip()
-REGION = os.getenv("RIOT_REGION", "americas").strip().lower()
+REGION = os.getenv("RIOT_REGION", "europe").strip().lower()
 GUILD_ID_STR = os.getenv("GUILD_ID", "").strip()
 
 if not DISCORD_TOKEN or not RIOT_API_KEY or not GUILD_ID_STR:
